@@ -1,0 +1,14 @@
+##
+# Project: PHPDISK File Storage Solution
+# This is NOT a freeware, use is subject to license terms.
+#
+# Site: http://www.phpdisk.com
+#
+# $Id: robots.txt 39 2024-12-11 08:17:44Z along $
+#
+# Copyright (C) 2008-2083 PHPDisk Team. All Rights Reserved.
+#
+##
+
+User-agent: * 
+Disallow: _phpdisk/

@@ -1,0 +1,79 @@
+/**
+##
+#	Project: PHPDISK File Storage Solution
+#	This is NOT a freeware, use is subject to license terms.
+#
+#	Chinese Website: http://www.phpdisk.com
+#
+#	International Website: http://www.phpdisk.net
+#
+#	Author: Along ( admin@phpdisk.com )
+#
+#	$Id: style.css 24 2024-12-10 03:39:13Z along $
+#
+#	Copyright (C) 2008-2083 PHPDisk Team. All Rights Reserved.
+#
+##
+*/
+.clear{
+	clear:both
+}
+.pd5{padding: 5px;}
+.main_box{
+	padding: 90px 0 50px 0;
+}
+.m-t-20 {
+  margin-top: 20px;
+}
+
+
+.bold{font-weight:bold}
+.alt_bg{ background:#EDEDED}
+
+
+.color1 { background-color: #fcfcfc; }
+.color2 { background-color: #f9f9f9; }
+.color3 { background-color: #d0d0d0; }
+.color4 { background-color: #f1f1f1; }
+.color5 {background-color:#ddffff}
+
+.txtgray{color:#666666}
+.txtgreen{ color:#008800}
+.txtred{ color:#FF0000}
+.txtblue{color:#0000FF}
+.f8{font-size:8px}
+.f10{font-size:10px}
+.f12{font-size:12px}
+.f14{font-size:14px}
+.f18{font-size:18px}
+
+
+.msg_box{ width:500px; margin:auto; padding:50px;}
+
+
+
+.foot_info{
+	padding-top:2px;font-size:12px; color:#103E5F;
+}
+.foot_box{background:url("../img/foot_bg.png") #FAFAFA repeat-x;}
+
+.p_bar{
+	margin-top:5px;
+}
+.p_redirect{
+	padding:3px 5px; border:1px #CCCCCC solid; margin:0 3px; text-align:center;
+}
+.p_num{
+	padding:3px 5px; border:1px #CCCCCC solid; margin:0 3px; text-align:center;
+}
+.p_info{
+	padding:3px 5px; border:1px #CCCCCC solid; margin:0 3px; text-align:center;
+}
+.p_curpage{
+	padding:3px 5px; border:1px #CCCCCC solid; margin:0 2px; text-align:center; color:#f00; font-weight:bold;
+}
+
+.lo_box{position:fixed; right:3px; bottom:3px; height:auto; background-color:#FFFFFF; border:1px solid #ccc}
+.lo_box .tit{ background-color:#ff6600; border-bottom:1px solid #ccc; padding:3px; color:#FFFFFF}
+.lo_box ul{padding:0; margin:0}
+.lo_box li{padding:5px;}
