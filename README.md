@@ -1,93 +1,101 @@
-# PPP-Dir文件管理系统  V24.12
-### （全称：PHPDisk Personal Professional Directory Manage）
+# PPP-Dir file management system  V24.12
+### （PHPDisk Personal Professional Directory Manage）
 
-##### 是一款功能强大的无数据库PHP文件管理系统，所见即所得存储，响应式设计，简约不简单。
-###### 这是PHPDisk Team 的又一款精细化却不失功能强大的云盘存储应用，极致的存储分享体验，直击用户需求痛点，让云盘的应用安装使用更加便捷化。
-
-----------
-
-
-#### 重点功能列表：
-
-- **即装即用，无需数据库的PHP的文件管理系统**
-- 只需要使用浏览器访问网址一样的操作，无需客户端
-- 目前支持可以实现目录、文件的删除，重命名操作，支持中文目录
-- **秒级迅速的数据索引搜索文件过滤能力，极致用户体验**
-- 超简单的设置登录管理方式
-- 含有后台管理面板，可以设置上传文件的格式
-- 含有在线预览文件，下载文件功能
-- **支持手机端扫二维码下载分享及适配HTML5页面**
-- **只需要配置指定网站目录，程序会自动解析显示目录下的文件及目录**
-- 在服务器上面可以跟管理平时的桌面文件一样的操作，无需重新上传文件到程序中
-
+##### It is a powerful database free PHP file management system with WYSIWYG storage, responsive design, and simplicity.
+###### This is another refined yet powerful cloud storage application from PHPDisk Team, providing an ultimate storage sharing experience and addressing user pain points, making cloud storage application installation and use more convenient.
 
 ----------
 
 
-####  适用场景：
+#### Imortant Feature：
 
-- 个人的文件管理，服务器上传到指定目录，即可管理使用
-- 文件同时可直接在服务器上操作上传，移动，或网页端操作，同步实时显示
-- 网页端可设置直接只做下载、展示文件使用，大大降低服务器安全问题
-- 文件可用FTP或管理员直接上传文件到服务器相应目录中，无需通过WEB上传，加快文件传输
-- **这是一款强大的C端应用，适用于所有的文件存储分享方向的应用**
-
-----------
-#### 程序截图
+- **Ready to install and use PHP file management system without the need for a database**
+- Just use a browser to access the same website without the need for a client
+- At present, it supports the deletion and renaming of directories and files, and supports Chinese directories
+- **Quick data indexing, file filtering ability in seconds, ultimate user experience**
+- Ultra simple login management settings
+- Contains a backend management panel that allows you to set the format of uploaded files
+- Contains online preview files and download file functions
+- **Support scanning QR codes on mobile devices to download, share, and adapt HTML5 pages**
+- **Just configure the specified website directory, and the program will automatically parse and display files and directories in the directory**
+- On the server, you can perform the same operations as managing regular desktop files, without the need to re upload files to the program
 
 
 ----------
 
 
-#### 如何安装:
-解压压缩包，upload 目录下的文件放到相应的网站目录中，
-可以在浏览器中测试访问，
-使用专业的代码编辑器打开修改 configs.php
+####  Applicable Scenarios：
+
+- Personal file management, upload the server to the specified directory for easy management and use
+- Files can be directly uploaded, moved, or accessed on the server, and displayed in real-time synchronously
+- The web version can be set to only be used for downloading and displaying files, greatly reducing server security issues
+- Files can be uploaded directly to the corresponding directory on the server using FTP or by an administrator, without the need to upload through the web, which speeds up file transfer
+- **This is a powerful C-end application that is suitable for all file storage and sharing applications**
+
+----------
+#### Program screenshot
+![1](http://www.phpdisk.net/pppdir-snapshot/1.png)
+![1](http://www.phpdisk.net/pppdir-snapshot/2.png)
+![1](http://www.phpdisk.net/pppdir-snapshot/3.png)
+![1](http://www.phpdisk.net/pppdir-snapshot/4.png)
+![1](http://www.phpdisk.net/pppdir-snapshot/5.png)
+![1](http://www.phpdisk.net/pppdir-snapshot/6.png)
+![1](http://www.phpdisk.net/pppdir-snapshot/7.png)
+![1](http://www.phpdisk.net/pppdir-snapshot/8.png)
+
+----------
+
+
+#### How to install:
+Extract the compressed file and place the files in the *upload* directory into the corresponding website directory,
+You can test the access in the browser,
+Open and modify *config.php* using a professional code editor
 
 
     
+    // Fill in freely, only for display
     $cfg['username'] = 'PPPAdmin'; 
-    // 随便填写，只用于显示
     
+    // User Frontend login password
     $cfg['login_pass'] = '11'; 
-    // 用户前台登录密码
     
+    // Admin Backend login password
     $cfg['admin_login_pass'] = '12'; 
-    // 管理后台登录密码
     
+    // The file parsing directory is based on the directory name of the website root directory. The program will read files in this directory, which can be modified without using special characters.
+    // Please make sure to modify the name of the parsing directory. To ensure security, it is recommended to disable the execution permission of this directory, and the directory name can be modified from time to time
     $cfg['phpdisk_dir'] = '@dir'; 
-    // !!文件解析目录 基于网站根目录的目录名称，程序会读取此目录下的文件，可修改不要使用特殊字符
-    // 请务必修改解析目录名称，为确保安全，推荐设置禁用此目录执行权限，同时可不定时修改此目录名称 
     
-    $cfg['default_lang'] = 'zh_cn'; 
-    // 默认语言 语言包在 _phpdisk/languages/ 目录下  zh_cn 为中文语言包 , en_us 为英文语言包
+    // The default language pack in the _phpdisk/languages/ , zh_cn is the Chinese language pack, en_us is an English language pack
+    $cfg['default_lang'] = 'en_us'; 
     
-    $cfg['phpdisk_url'] = 'http://yourDomain/'; 
-    // 程序访问完整地址，结尾要加 /
+    // Program access address, add at the end /
+    $cfg['phpdisk_url'] = 'http://yourdomain/'; 
     
+    // Browser character encoding
     $cfg['charset'] = 'utf-8'; 
-    // 浏览器字符编码
     
+    // Enable debug mode
     $cfg['debug'] = 0; // 1 open , 0 close 
-    // 是否开启调试模式
     
+    // File name not allowed to appear in the characters
     $cfg['deny_chars'] = array('\\','/',':','<','>','?','"','*',"'",'`'); 
-    // 文件名中不允许出现的字符
 
 
 
-> ####文件解析 $cfg['phpdisk_dir'] 目录需要Window系统需要写入读取权限或Linux系统 755权限或直接 777权限,为确保安全，推荐设置禁用此目录执行权限，同时可不定时修改此目录名称 
+
+> ####File parsing: The *$cfg['phpdisk_dir']* directory requires Windows system write and read permissions, Linux system 755 permissions, or direct 777 permissions. To ensure security, it is recommended to disable the execution permission of this directory and modify its name from time to time
 
 
 ----------
 
-#### 技术说明:
-适用于 PHP 5.4.x - PHP 7.3.x ， 无需数据库
+#### Run environment:
+Fit for PHP 5.4.x - PHP 7.3.x ，no need database!
 
 ----------
 
-#### 开发商：
-官方网址： [www.phpdisk.com](http://www.phpdisk.com/?utm=md)
+#### Developers：
+Official Site： [www.phpdisk.net](http://www.phpdisk.net/?utm=md)
 
-交流论坛： [bbs1.phpdisk.com](http://bbs1.phpdisk.com/?utm=md)
+Community： [support.phpdisk.net](http://support.phpdisk.net/?utm=md)
 
